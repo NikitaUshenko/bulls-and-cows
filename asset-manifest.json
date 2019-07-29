@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/bulls-and-cows/static/js/main.aeb31b83.chunk.js",
+    "main.js.map": "/bulls-and-cows/static/js/main.aeb31b83.chunk.js.map",
+    "runtime~main.js": "/bulls-and-cows/static/js/runtime~main.4298023d.js",
+    "runtime~main.js.map": "/bulls-and-cows/static/js/runtime~main.4298023d.js.map",
+    "index.html": "/bulls-and-cows/index.html",
+    "precache-manifest.2ebf1fd3fa881bcf663bbe8cd7969fd2.js": "/bulls-and-cows/precache-manifest.2ebf1fd3fa881bcf663bbe8cd7969fd2.js",
+    "service-worker.js": "/bulls-and-cows/service-worker.js"
+  }
+}

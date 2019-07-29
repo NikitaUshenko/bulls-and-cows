@@ -1,0 +1,90 @@
+body {
+    background: black;
+    color: #333;
+    padding: 3% 10%;
+}
+
+header {
+    text-align: center;
+}
+
+.heading {
+    font-size: 5.5vw;
+    font-family: 'Dokdo', cursive;
+}
+.animals {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+.animals .block-cow, .animals .block-bull {
+    width: 30%;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.animals img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+.content #guess_number {
+    width: 300px;
+    padding: 12px 20px;
+    border: 1px solid #949090;
+    border-radius: 4px;
+}
+
+.content #guess_number:focus {
+    border: 1px solid black;
+}
+
+.content #submit_guess {
+    background-color: #313038;
+    border: none;
+    color: white;
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.content #submit_guess:hover {
+    background-color: #1d1d1f;
+    cursor: pointer;
+}
+
+.content .results-block {
+    padding: 50px 30%;
+}
+
+.content #results_output {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.content .results-block #win h2 {
+    font-size: 7vw;
+    color: green;
+    font-family: 'Dokdo', cursive;
+}
+
+@media (max-width: 768px) {
+    section.rules {
+        font-size: 12px;
+    }
+
+    .content #guess_number, .content #submit_guess {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
