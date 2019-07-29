@@ -28,7 +28,7 @@ function calculate(computerNumber, event) {
             let bulls = calculateBulls(playersNumber, computerNumber);
 
             let li = document.createElement("li");
-            li.innerHTML = `Cows 🐮: ${cows} and bulls 🐂: ${bulls}`;
+            li.innerHTML = `${playersNumber} Cows 🐮: ${cows} and bulls 🐂: ${bulls}`;
 
             results_output.appendChild(li);
             document.getElementById("guess_number").value = '';
