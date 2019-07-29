@@ -1,1 +1,56 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat" rel="stylesheet"><link href="style.css" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"></head><body><header><h1 class="animated bounceIn heading">Enjoy the game!</h1></header><section class="animals"><div class="block-cow animated bounceInLeft duration-2s"><img src="http://pngimg.com/uploads/cow/cow_PNG50595.png" alt="Cow"></div><div class="block-bull animated bounceInRight duration-2s"><img src="http://cdn.onlinewebfonts.com/svg/img_74325.png" alt="Bull"></div></section><section class="rules bounceIn"><ul><li>Компьютер загадывает случайное число из 4 разных цифр</li><li>Игрок вводит 4 значное число с разными цифрами</li><li>Компьтер отображает результат (введённое число: сколько быков, сколько коров)</li><li>Пример: загадано 1234, введено 1345, результат: 1 бык (единица угадана на своём месте) и 2 коровы (3 и 4 присутствуют но не на своих местах) всё повторяется до тех пор пока пользователь не угадает либо не отменит ввод</li><li>Перед очередной попыткой пользователь должен видеть результаты всех предыдущих попыток (чтобы удобнее было думать над новой)</li></ul></section><section class="content"><div class="form-block"><form id="form"><input id="guess_number" placeholder="Input your number" maxlength="4" class="animated bounceInLeft"/> <input id="submit_guess" type="submit" value="Submit" class="animated bounceInRight"/></form></div><div class="results-block"><ol id="results_output"></ol><div id="win"></div></div></section><script src="app.js"></script><script>!function(i){function e(e){for(var r,n,t=e[0],o=e[1],u=e[2],l=0,f=[];l<t.length;l++)n=t[l],c[n]&&f.push(c[n][0]),c[n]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,r=0;r<p.length;r++){for(var n=p[r],t=!0,o=1;o<n.length;o++){var u=n[o];0!==c[u]&&(t=!1)}t&&(p.splice(r--,1),e=l(l.s=n[0]))}return e}var n={},c={1:0},p=[];function l(e){if(n[e])return n[e].exports;var r=n[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=n,l.d=function(e,r,n){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:n})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(l.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)l.d(n,t,function(e){return r[e]}.bind(null,t));return n},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/bulls-and-cows/";var r=window.webpackJsonp=window.webpackJsonp||[],t=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=t;a()}([])</script><script src="/bulls-and-cows/static/js/main.aeb31b83.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+<body>
+
+<header>
+    <h1 class="animated bounceIn heading">Enjoy the game!</h1>
+</header>
+
+<section class="animals">
+    <div class="block-cow animated bounceInLeft duration-2s">
+        <img src="http://pngimg.com/uploads/cow/cow_PNG50595.png" alt="Cow">
+    </div>
+    <div class="block-bull animated bounceInRight duration-2s">
+        <img src="http://cdn.onlinewebfonts.com/svg/img_74325.png" alt="Bull">
+    </div>
+</section>
+
+<section class="rules bounceIn">
+    <ul>
+        <li>Компьютер загадывает случайное число из 4 разных цифр</li>
+        <li> Игрок вводит 4 значное число с разными цифрами</li>
+        <li>Компьтер отображает результат (введённое число: сколько быков, сколько коров)</li>
+        <li>Пример: загадано 1234, введено 1345, результат: 1 бык (единица угадана на своём месте) и 2 коровы (3 и 4 присутствуют но не на своих местах)
+            всё повторяется до тех пор пока пользователь не угадает либо не отменит ввод</li>
+        <li>Перед очередной попыткой пользователь должен видеть результаты всех предыдущих попыток (чтобы удобнее было думать над новой)</li>
+    </ul>
+</section>
+
+<section class="content">
+    <div class="form-block">
+        <form id="form">
+            <input type="text" id="guess_number" placeholder="Input your number" value="" maxlength="4" class="animated bounceInLeft" />
+            <input id="submit_guess" type="submit" value="Submit" class="animated bounceInRight" />
+        </form>
+    </div>
+    <div class="results-block">
+        <ol id="results_output">
+
+        </ol>
+        <div id="win"></div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
